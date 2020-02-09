@@ -1,0 +1,24 @@
+{
+    "name": "hanson/laravel-admin-qiniu",
+    "authors": [
+        {
+            "name": "Hanson",
+            "email": "h@hanc.cc"
+        }
+    ],
+    "require": {
+        "overtrue/laravel-filesystem-qiniu": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hanson\\LaravelAdminQiniu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hanson\\LaravelAdminQiniu\\QiniuServiceProvider"
+            ]
+        }
+    }
+}
