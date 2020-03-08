@@ -94,7 +94,7 @@ $("input{$this->getElementClassSelector()}").on('filesorted', function(event, pa
 EOT;
         }
 
-        $keys = collect($this->options['initialPreviewConfig'])->map(function ($item) {
+        $keys = collect($this->options['initialPreviewConfig'] ?? [])->map(function ($item) {
             return $item['key'];
         })->implode(',');
 
